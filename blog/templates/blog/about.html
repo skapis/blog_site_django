@@ -1,0 +1,21 @@
+{% extends 'base_nopartials.html'%}
+{% load static %}
+{% block content %}
+<div class="container px-3">
+    <h3>About this site</h3>
+    <p>
+        Welcome to this blog site. This site is simple example of blog site, which includes a few posts. 
+        Each post has its own detail, where is the content of the post.<br>
+        In the navigation bar, you can search posts by name. Each post has also one category and can have one or more tags.<br>
+        If you are superuser or staff user you can add, delete or edit posts, categories and tags. You can see this options in admin dashboard or if you are logged in, you have these options directly on the site.
+    </p>
+    <p>
+        You can login by click <a href="{% url 'login' %}">here</a>.<br>
+    </p>
+    <p>
+        <strong>
+            Please remember you cannot create new user on this site. If you want to create user you need to contact admin or go to my MultiApp platform, where is the same blog site but everyone can create new account.
+        </strong>
+    </p>
+</div>
+{% endblock %}

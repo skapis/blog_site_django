@@ -1,0 +1,20 @@
+{% load static %}
+{% load tags %}
+<div class="content-section">
+    <h3>Categories</h3>
+      <ul class="list-group">
+        {% for category in categories %}
+        {% url 'category' category.name as category_url %}
+            <li class="list-group-item list-group-item-light"><a class="category-link" href="{% url 'category' category.name %}">{{category.name}}</a></li>
+        {% endfor %}
+      </ul>
+</div>
+<div class="content-section">
+    <h3>Tags</h3>
+    {% for post_tag in post_tags %}
+    {% url 'tag' post_tag.id as tag_url %}
+        <div class="badge badge-primary p-2 m-1 rounded-sm border-solid">
+            <a href="{% url 'tag' post_tag.name %}" class="tag-link">{{post_tag.name}}</a>
+        </div>
+    {% endfor %}    
+</div>
