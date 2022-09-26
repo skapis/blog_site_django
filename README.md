@@ -8,6 +8,6 @@ It is very simple blog site, where is only one user, who can add/delete/edit pos
 # Database
 This site use PostgreSQL as a database. In repository is also an example of PostgreSQL database, where are some posts, categories and tags. If you want to use this database, you will have to restore this database in PGAdmin.
 
-Superuser
-login = root
+Superuser<br>
+login = root<br>
 password = root123
