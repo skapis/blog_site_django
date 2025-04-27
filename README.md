@@ -1,13 +1,21 @@
-# Blog site Django
+# 📝 Blog Site Django
 
-This repository contains a simple blog site which is in the Django framework. 
+This repository contains a simple blog site built with the **Django** framework.
 
-It is a simple blog site where is only one user who can add/delete/edit posts, categories and tags. As an admin, you can create more users who can contribute to the blog.
+It is a basic blog where there is initially only one user who can add, delete, and edit posts, categories, and tags.  
+As an admin, you can create more users who can contribute to the blog.
 
+## 🗄 Database
 
-# Database
-This site uses PostgreSQL as a database. In repository is also an example of a PostgreSQL database where are some posts, categories and tags. If you want to use this database, you will have to restore this database in PGAdmin.
+This project uses **PostgreSQL** as the database.
 
-Superuser<br>
-login = root<br>
-password = root123
+A sample database dump (`blog_db.sql`) is included in the repository.  
+To use it:
+
+1. Create a new PostgreSQL database.
+2. Restore the `blog_db.sql` into your database using PGAdmin or another tool.
+
+Default superuser credentials:
+
+Username: root 
+Password: root123
